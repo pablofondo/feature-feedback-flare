@@ -16,11 +16,11 @@ const Index = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Introducing Our New
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-              {" "}Analytics Dashboard
+              {" "}Performance Insights
             </span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            We're excited to show you our upcoming analytics dashboard feature. This powerful tool will help you visualize your data like never before, with interactive charts, real-time updates, and customizable views.
+            We're excited to show you our upcoming performance insights feature. This intelligent tool will automatically identify your worst performing listings and provide actionable recommendations to improve their performance and increase leads.
           </p>
           <div className="inline-flex items-center px-6 py-3 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
             🚀 Coming Soon - Help us shape this feature with your feedback!
@@ -34,7 +34,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Feature Preview</h2>
             <p className="text-lg text-gray-600">
-              Here's what the new analytics dashboard will look like
+              Here's what the new performance insights dashboard will look like
             </p>
           </div>
           <GraphFeature />
@@ -77,7 +77,7 @@ const Index = () => {
             <span className="text-xl font-semibold">FeatureLab</span>
           </div>
           <p className="text-gray-400">
-            Building the future of analytics, one feature at a time.
+            Building the future of property management, one feature at a time.
           </p>
         </div>
       </footer>

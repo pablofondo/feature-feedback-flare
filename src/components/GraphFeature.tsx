@@ -5,77 +5,128 @@ const GraphFeature = () => {
   return (
     <div className="bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto">
       <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-        New Analytics Dashboard
+        Worst Performing Listings Detection
       </h3>
       
       <div className="bg-gray-50 rounded-lg p-6 border">
         <div className="flex items-center justify-between mb-4">
-          <h4 className="text-lg font-semibold text-gray-700">Revenue Overview</h4>
-          <div className="flex space-x-2">
-            <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-            <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
-          </div>
+          <h4 className="text-lg font-semibold text-gray-700">3 am schlechtesten performende Inserate</h4>
+          <div className="text-sm text-gray-500">Performance Insights</div>
         </div>
         
-        {/* Mock Graph */}
-        <div className="relative h-64 bg-white rounded border">
-          <svg className="w-full h-full" viewBox="0 0 400 200">
-            {/* Grid lines */}
-            <defs>
-              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0f0f0" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-            
-            {/* Graph lines */}
-            <polyline
-              fill="none"
-              stroke="#3b82f6"
-              strokeWidth="3"
-              points="20,150 80,120 140,80 200,60 260,40 320,30 380,20"
-            />
-            <polyline
-              fill="none"
-              stroke="#10b981"
-              strokeWidth="3"
-              points="20,180 80,160 140,140 200,100 260,80 320,60 380,50"
-            />
-            <polyline
-              fill="none"
-              stroke="#f59e0b"
-              strokeWidth="3"
-              points="20,170 80,140 140,110 200,90 260,70 320,65 380,60"
-            />
-            
-            {/* Data points */}
-            <circle cx="380" cy="20" r="4" fill="#3b82f6" />
-            <circle cx="380" cy="50" r="4" fill="#10b981" />
-            <circle cx="380" cy="60" r="4" fill="#f59e0b" />
-          </svg>
-        </div>
-        
-        {/* Legend */}
-        <div className="flex justify-center space-x-6 mt-4">
-          <div className="flex items-center">
-            <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
-            <span className="text-sm text-gray-600">Q1 Revenue</span>
+        {/* Listing Items */}
+        <div className="space-y-4">
+          {/* First Listing */}
+          <div className="bg-white rounded-lg p-4 border border-gray-200 flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-6 bg-gray-400 rounded"></div>
+              </div>
+              <div>
+                <div className="font-medium text-blue-600">Eschergutweg 17, 8049 Zürich</div>
+                <div className="text-gray-600">CHF 4'720.— / Monat</div>
+                <div className="flex items-center space-x-4 mt-1">
+                  <span className="text-sm text-gray-500">5 Leads</span>
+                  <span className="text-sm text-red-500">↓ -30%</span>
+                  <div className="flex items-center">
+                    <span className="text-sm text-gray-500 mr-2">Performance</span>
+                    <div className="flex space-x-1">
+                      <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                      <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+                      <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+                      <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg text-sm">
+              <div className="flex items-center">
+                <span className="mr-1">💡</span>
+                <div>
+                  <div className="font-medium">Die vollständige Adresse und mehr Bilder könnten</div>
+                  <div>die <strong>Performance um 28% verbessern</strong>.</div>
+                  <div className="text-blue-600 underline mt-1">Inserat vervollständigen</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center">
-            <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
-            <span className="text-sm text-gray-600">Q2 Revenue</span>
+
+          {/* Second Listing */}
+          <div className="bg-white rounded-lg p-4 border border-gray-200 flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-6 bg-green-400 rounded"></div>
+              </div>
+              <div>
+                <div className="font-medium text-blue-600">Eschergutweg 17, 8049 Zürich</div>
+                <div className="text-gray-600">CHF 4'720.— / Monat</div>
+                <div className="flex items-center space-x-4 mt-1">
+                  <span className="text-sm text-gray-500">5 Leads</span>
+                  <span className="text-sm text-red-500">↓ -30%</span>
+                  <div className="flex items-center">
+                    <span className="text-sm text-gray-500 mr-2">Performance</span>
+                    <div className="flex space-x-1">
+                      <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                      <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+                      <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+                      <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg text-sm">
+              <div className="flex items-center">
+                <span className="mr-1">💡</span>
+                <div>
+                  <div className="font-medium">Der <strong>Preis ist 18% höher im Vergleich</strong> zu ähnlichen</div>
+                  <div>Inseraten. <span className="text-blue-600 underline">Konkurrenz-Analyse</span></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center">
-            <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>
-            <span className="text-sm text-gray-600">Q3 Revenue</span>
+
+          {/* Third Listing */}
+          <div className="bg-white rounded-lg p-4 border border-gray-200 flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-6 bg-gray-400 rounded"></div>
+              </div>
+              <div>
+                <div className="font-medium text-blue-600">Eschergutweg 17, 8049 Zürich</div>
+                <div className="text-gray-600">CHF 4'720.— / Monat</div>
+                <div className="flex items-center space-x-4 mt-1">
+                  <span className="text-sm text-gray-500">5 Leads</span>
+                  <span className="text-sm text-red-500">↓ -30%</span>
+                  <div className="flex items-center">
+                    <span className="text-sm text-gray-500 mr-2">Performance</span>
+                    <div className="flex space-x-1">
+                      <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                      <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+                      <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+                      <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg text-sm">
+              <div className="flex items-center">
+                <span className="mr-1">💡</span>
+                <div>
+                  <div className="font-medium">Der <strong>Preis ist 18% höher im Vergleich</strong> zu ähnlichen</div>
+                  <div>Inseraten. <span className="text-blue-600 underline">Konkurrenz-Analyse</span></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       
       <div className="mt-6 text-center">
         <p className="text-gray-600">
-          Interactive charts with real-time data visualization and customizable views
+          AI-powered insights to identify underperforming listings and actionable improvement suggestions
         </p>
       </div>
     </div>
