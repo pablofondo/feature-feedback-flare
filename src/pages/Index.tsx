@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import GraphFeature from '../components/GraphFeature';
@@ -71,7 +72,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Login CTA */}
+      {/* Login CTA - Now positioned right after feature preview */}
       <LoginCTA />
 
       {/* Social Proof & Voting */}
