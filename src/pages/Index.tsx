@@ -1,6 +1,6 @@
-
 import React from 'react';
 import Header from '../components/Header';
+import GraphFeature from '../components/GraphFeature';
 import FeatureVoting from '../components/FeatureVoting';
 import LoginCTA from '../components/LoginCTA';
 import ContactForm from '../components/ContactForm';
@@ -150,8 +150,32 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* Feature Preview */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6">
+              EXCLUSIVE PREVIEW
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              See the Future in Action
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Here's a sneak peek at how our AI will transform your property management workflow
+            </p>
+          </div>
+          
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl blur-2xl transform rotate-1"></div>
+            <div className="relative">
+              <GraphFeature />
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/* Login CTA */}
+      {/* Login CTA - Now positioned right after feature preview */}
       <LoginCTA />
 
       {/* Feature Voting */}
