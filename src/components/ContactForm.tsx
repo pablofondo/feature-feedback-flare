@@ -114,27 +114,14 @@ const ContactForm = () => {
           </div>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex justify-center">
           <button
             type="submit"
-            className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-purple-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-8 rounded-xl hover:from-blue-700 hover:to-purple-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl"
           >
             <Send className="w-5 h-5" />
             <span>Send Feedback</span>
           </button>
-          
-          <button
-            type="button"
-            className="px-8 py-4 border border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-all duration-200"
-          >
-            Save as Draft
-          </button>
-        </div>
-        
-        <div className="text-center pt-4">
-          <p className="text-sm text-gray-500">
-            📧 We typically respond within 24 hours • 🔒 Your data is secure and private
-          </p>
         </div>
       </form>
     </div>
