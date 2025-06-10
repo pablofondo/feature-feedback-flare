@@ -1,8 +1,8 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import GraphFeature from '../components/GraphFeature';
 import FeatureVoting from '../components/FeatureVoting';
+import LoginCTA from '../components/LoginCTA';
 import ContactForm from '../components/ContactForm';
 
 const Index = () => {
@@ -46,7 +46,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-
+      
       {/* Feature Preview */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-7xl mx-auto">
@@ -70,6 +70,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Login CTA */}
+      <LoginCTA />
 
       {/* Social Proof & Voting */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-white/70 to-blue-50/70 backdrop-blur-sm">
