@@ -43,30 +43,6 @@ const LoginCTA = () => {
         </p>
         
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto border border-gray-200/50 shadow-xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <Mail className="w-6 h-6 text-blue-600" />
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-1">Personalized Reports</h3>
-              <p className="text-sm text-gray-600">Get insights tailored to your portfolio</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <Sparkles className="w-6 h-6 text-green-600" />
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-1">AI Recommendations</h3>
-              <p className="text-sm text-gray-600">Actionable steps to improve performance</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-3">
-                <LogIn className="w-6 h-6 text-purple-600" />
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-1">Real-time Updates</h3>
-              <p className="text-sm text-gray-600">Stay informed with live insights</p>
-            </div>
-          </div>
-          
           <form onSubmit={handleLogin} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
