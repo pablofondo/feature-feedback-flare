@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import GraphFeature from '../components/GraphFeature';
@@ -85,22 +84,6 @@ const Index = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Be part of the exclusive group shaping the future of property management technology
             </p>
-            
-            {/* Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">850+</div>
-                <div className="text-gray-600">Properties Optimized</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">245%</div>
-                <div className="text-gray-600">Average Lead Increase</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">2.5hrs</div>
-                <div className="text-gray-600">Time Saved Daily</div>
-              </div>
-            </div>
           </div>
           
           <FeatureVoting />
