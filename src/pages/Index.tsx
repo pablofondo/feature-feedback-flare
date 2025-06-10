@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import GraphFeature from '../components/GraphFeature';
@@ -38,12 +37,6 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-lg">
-              Get Early Access
-            </button>
-            <button className="px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 font-semibold rounded-xl border border-gray-200 hover:bg-white hover:shadow-lg transition-all duration-300 text-lg">
-              Watch Demo
-            </button>
           </div>
         </div>
       </section>
