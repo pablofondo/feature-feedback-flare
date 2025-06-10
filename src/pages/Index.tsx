@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import GraphFeature from '../components/GraphFeature';
@@ -43,6 +44,116 @@ const Index = () => {
             <button className="px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 font-semibold rounded-xl border border-gray-200 hover:bg-white hover:shadow-lg transition-all duration-300 text-lg">
               Watch Demo
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature Explanation Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/70 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-purple-700 text-sm font-medium mb-6">
+              HOW IT WORKS
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              AI-Powered Property Analysis
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Our advanced AI continuously monitors your property listings and provides intelligent insights to maximize your rental success
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                What Does This Feature Do?
+              </h3>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mt-1">
+                    <span className="text-blue-600 font-bold">1</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-2">Automatic Performance Monitoring</h4>
+                    <p className="text-gray-600">Continuously tracks key metrics like views, inquiries, and lead conversion rates for all your property listings.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mt-1">
+                    <span className="text-purple-600 font-bold">2</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-2">Smart Problem Detection</h4>
+                    <p className="text-gray-600">AI identifies underperforming listings by comparing against market benchmarks and similar properties in your area.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mt-1">
+                    <span className="text-green-600 font-bold">3</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-2">Actionable Recommendations</h4>
+                    <p className="text-gray-600">Provides specific, data-driven suggestions to improve listing performance, from pricing adjustments to content optimization.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8">
+              <div className="bg-white rounded-2xl p-6 shadow-lg">
+                <div className="flex items-center mb-4">
+                  <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                  <span className="text-sm font-medium text-gray-600">Performance Alert</span>
+                </div>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">Badenerstrasse 25, 8004 Zürich</h4>
+                <div className="flex items-center space-x-3 mb-4">
+                  <span className="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded">3 Leads</span>
+                  <span className="text-sm text-red-500 font-medium">↓ -45%</span>
+                </div>
+                <div className="bg-gradient-to-r from-orange-50 to-red-50 p-3 rounded-lg border border-orange-100">
+                  <div className="flex items-start">
+                    <span className="mr-2 text-lg">📊</span>
+                    <div className="text-sm">
+                      <div className="font-medium text-orange-700 mb-1">
+                        Price is 18% higher compared to similar listings
+                      </div>
+                      <button className="text-orange-600 underline font-medium">
+                        View market analysis →
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Benefits Grid */}
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center p-8 bg-white/80 rounded-3xl border border-gray-100 shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-white text-2xl">⚡</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Save Hours Weekly</h3>
+              <p className="text-gray-600">No more manual performance tracking. Our AI monitors everything automatically and alerts you only when action is needed.</p>
+            </div>
+
+            <div className="text-center p-8 bg-white/80 rounded-3xl border border-gray-100 shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-white text-2xl">📈</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Increase Lead Generation</h3>
+              <p className="text-gray-600">Data-driven recommendations help optimize your listings for maximum visibility and tenant interest.</p>
+            </div>
+
+            <div className="text-center p-8 bg-white/80 rounded-3xl border border-gray-100 shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <span className="text-white text-2xl">🎯</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Precision Targeting</h3>
+              <p className="text-gray-600">AI analyzes market trends and competitor data to suggest optimal pricing and positioning strategies.</p>
+            </div>
           </div>
         </div>
       </section>
