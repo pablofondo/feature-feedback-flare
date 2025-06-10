@@ -178,18 +178,9 @@ const Index = () => {
       {/* Login CTA - Now positioned right after feature preview */}
       <LoginCTA />
 
-      {/* Social Proof & Voting */}
+      {/* Feature Voting */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-white/70 to-blue-50/70 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Join 1,200+ Property Managers
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Be part of the exclusive group shaping the future of property management technology
-            </p>
-          </div>
-          
           <FeatureVoting />
         </div>
       </section>
