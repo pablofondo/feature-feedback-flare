@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '../components/Header';
 import GraphFeature from '../components/GraphFeature';
@@ -119,33 +120,6 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Benefits Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8 bg-white/80 rounded-3xl border border-gray-100 shadow-lg">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">⚡</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Save Hours Weekly</h3>
-              <p className="text-gray-600">No more manual performance tracking. Our AI monitors everything automatically and alerts you only when action is needed.</p>
-            </div>
-
-            <div className="text-center p-8 bg-white/80 rounded-3xl border border-gray-100 shadow-lg">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">📈</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Increase Lead Generation</h3>
-              <p className="text-gray-600">Data-driven recommendations help optimize your listings for maximum visibility and tenant interest.</p>
-            </div>
-
-            <div className="text-center p-8 bg-white/80 rounded-3xl border border-gray-100 shadow-lg">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">🎯</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Precision Targeting</h3>
-              <p className="text-gray-600">AI analyzes market trends and competitor data to suggest optimal pricing and positioning strategies.</p>
             </div>
           </div>
         </div>
